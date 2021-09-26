@@ -1,0 +1,89 @@
+.row {
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  width: 25%;
+  float: left;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .col {
+    width: 100%;
+  }
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 510px;
+  flex-direction: column;
+  border-radius: 15px 15px 15px 15px;
+  margin: 0px 24px;
+  margin-bottom: 24px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.movie-image {
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 12px;
+  align-items: flex-start;
+}
+
+.title-year {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+}
+.year {
+}
+.rating {
+  display: flex;
+  background-color: #b5f09d;
+  width: 50px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#page-title {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  border-radius: 15px;
+
+  width: 300px;
+  height: 30px;
+  left: 1300px;
+  position: relative;
+  margin: 20px;
+}
+
+.btn {
+  left: 1300px;
+  position: relative;
+  height: 30px;
+  border-radius: 15px;
+}
